@@ -920,6 +920,20 @@ footer { padding: 4rem 1.5rem 2rem; background: var(--light-bg); }
   gap: 1rem;
   padding: 0.5rem 1.75rem 1.5rem;
 }
+.catalog-note {
+  margin: 0 1.75rem 1rem;
+  padding: 0.85rem 1.1rem;
+  border-radius: var(--radius-md);
+  background: rgba(0, 102, 255, 0.08);
+  border: 1px dashed var(--primary);
+  color: var(--primary);
+  font-family: var(--font-head);
+  font-size: 0.92rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+.catalog-note[hidden] { display: none; }
 .catalog-item {
   background: var(--light-card);
   border: 1px solid var(--light-border);

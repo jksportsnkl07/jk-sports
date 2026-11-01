@@ -109,12 +109,6 @@
         "stock": true
       },
       {
-        "img": "assets/nivia_blue_goalkeeper_gloves.webp",
-        "name": "Nivia Blue Goalkeeper Gloves",
-        "desc": "Grippy latex palms for match-day saves",
-        "stock": true
-      },
-      {
         "img": "assets/nivia_carbonite_goalkeeper_gloves.webp",
         "name": "Nivia Carbonite Goalkeeper Gloves",
         "desc": "Carbonite range with reinforced palm grip",
@@ -326,6 +320,7 @@
     "title": "Athletics Gear",
     "tag": "ATHLETICS ZONE",
     "desc": "Track and field essentials for athletes.",
+    "note": "All types of athletics products are available",
     "items": [
       {
         "img": "assets/photo-1547941126-3d5322b218b0.jpg",

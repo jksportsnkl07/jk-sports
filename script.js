@@ -157,7 +157,6 @@ var CATALOG = {
       { img: 'assets/nivia_football.webp', name: 'Match-Grade Football', desc: 'Size 4 & 5, TPU and leather', stock: true },
       { img: 'assets/mayor_club_shin_guards.webp', name: 'Shin Guards', desc: 'Lightweight protective guards', stock: true },
       { img: 'assets/nivia_blue_football_boots.webp', name: 'Football Boots / Cleats', desc: 'Firm-ground & turf studs', stock: true },
-      { img: 'assets/nivia_blue_goalkeeper_gloves.webp', name: 'Nivia Blue Goalkeeper Gloves', desc: 'Grippy latex palms for match-day saves', stock: true },
       { img: 'assets/nivia_carbonite_goalkeeper_gloves.webp', name: 'Nivia Carbonite Goalkeeper Gloves', desc: 'Carbonite range with reinforced palm grip', stock: true },
       { img: 'assets/golden_football_boot_trophy.webp', name: 'Golden Football Boot Trophy', desc: 'Golden boot award trophy for tournaments', stock: true },
       { img: 'https://images.unsplash.com/photo-1546519638-68e109498ffc?w=400&auto=format&fit=crop', name: 'Goal Nets & Cones', desc: 'Training equipment for clubs', stock: true }
@@ -246,6 +245,7 @@ var CATALOG = {
     title: 'Athletics Gear',
     tag:   'ATHLETICS ZONE',
     desc:  'Track and field essentials for athletes.',
+    note:  'All types of athletics products are available',
     items: [
       { img: 'https://images.unsplash.com/photo-1547941126-3d5322b218b0?w=400&auto=format&fit=crop', name: 'Running Spikes', desc: 'Track shoes for sprint & distance', stock: true },
       { img: 'https://images.unsplash.com/photo-1761225291317-6bbf383011f2?w=400&auto=format&fit=crop', name: 'Stopwatches & Batons', desc: 'Relay & timing equipment', stock: true },
@@ -431,7 +431,7 @@ if (catalogImageIssues.length && typeof console !== 'undefined' && console.warn)
   console.warn('JK Sports catalog image issues detected', catalogImageIssues);
 }
 
-var CATALOG_SOURCE_URL = 'catalog.json?v=20261102';
+var CATALOG_SOURCE_URL = 'catalog.json?v=20261103';
 
 function refreshCatalogIssues() {
   catalogImageIssues = scanCatalogImageIssues(CATALOG);
@@ -475,11 +475,22 @@ function openCatalog(key) {
   var tagEl   = document.getElementById('catalogTag');
   var descEl  = document.getElementById('catalogDesc');
   var itemsEl = document.getElementById('catalogItems');
+  var noteEl  = document.getElementById('catalogNote');
   var modalEl = document.getElementById('catalogModal');
 
   if (titleEl) titleEl.textContent = c.title;
   if (tagEl)   tagEl.textContent   = c.tag;
   if (descEl)  descEl.textContent  = c.desc;
+
+  if (noteEl) {
+    if (c.note) {
+      noteEl.textContent = c.note;
+      noteEl.hidden = false;
+    } else {
+      noteEl.textContent = '';
+      noteEl.hidden = true;
+    }
+  }
 
   if (itemsEl) {
     itemsEl.innerHTML = c.items.map(function (item, itemIndex) {
@@ -553,48 +564,6 @@ var ORDER_PRODUCTS = [
     desc: 'Custom sublimation printed jerseys for teams',
     badge: 'CUSTOM'
   },
-  {
-    id: 'cricket-kit-bag',
-    name: 'Cricket Kit Bag',
-    price: 1200,
-    img: 'assets/andriyko-podilnyk-sGRJ36ogml8-unsplash.jpg',
-    desc: 'Spacious kit bag to carry all your gear',
-    badge: 'NEW'
-  },
-
-  /* ── Cricket ── */
-  {
-    id: 'stanford-cricket-ball',
-    name: 'Stanford Cricket Ball',
-    price: 600,
-    img: 'assets/stanford_cricket_ball.webp',
-    desc: 'Premium leather cricket ball with SF Stanford branding',
-    badge: 'CRICKET'
-  },
-  {
-    id: 'blue-cricket-helmet',
-    name: 'Blue Cricket Helmet',
-    price: 1800,
-    img: 'assets/blue_cricket_helmet.webp',
-    desc: 'Protective cricket helmet for batting and keeping',
-    badge: 'CRICKET'
-  },
-  {
-    id: 'white-cricket-test-pad',
-    name: 'White Cricket Test Pad',
-    price: 1500,
-    img: 'assets/white_cricket_test_pad.webp',
-    desc: 'Test-grade batting pads for match protection',
-    badge: 'CRICKET'
-  },
-  {
-    id: 'cricket-stumps',
-    name: 'Cricket Stumps (Kox Tons)',
-    price: 1200,
-    img: 'assets/cricket_stemp.webp',
-    desc: 'Wooden stumps set for practice and matches',
-    badge: 'CRICKET'
-  },
 
   /* ── Badminton ── */
   {
@@ -603,22 +572,6 @@ var ORDER_PRODUCTS = [
     price: 3500,
     img: 'assets/yonex_badminton_racket.webp',
     desc: 'Yonex racket for club and tournament play',
-    badge: 'BADMINTON'
-  },
-  {
-    id: 'yonex-mavis-350',
-    name: 'Yonex Mavis 350 Shuttlecocks',
-    price: 550,
-    img: 'assets/yonex_mavis_350_shuttlecocks.webp',
-    desc: 'Nylon shuttlecocks for durable practice play',
-    badge: 'BADMINTON'
-  },
-  {
-    id: 'yonex-bg80-bg65-strings',
-    name: 'Yonex BG80 / BG65 Ti Strings',
-    price: 700,
-    img: 'assets/yonex_bg80_bg65_ti_strings.webp',
-    desc: 'High-performance badminton string sets',
     badge: 'BADMINTON'
   },
   {
@@ -664,14 +617,6 @@ var ORDER_PRODUCTS = [
     badge: 'FOOTBALL'
   },
   {
-    id: 'nivia-blue-goalkeeper-gloves',
-    name: 'Nivia Blue Goalkeeper Gloves',
-    price: 1100,
-    img: 'assets/nivia_blue_goalkeeper_gloves.webp',
-    desc: 'Grippy goalkeeper gloves for match-day saves',
-    badge: 'FOOTBALL'
-  },
-  {
     id: 'nivia-carbonite-goalkeeper-gloves',
     name: 'Nivia Carbonite Goalkeeper Gloves',
     price: 1400,
@@ -696,24 +641,6 @@ var ORDER_PRODUCTS = [
     img: 'assets/nivia_white_green_ball.webp',
     desc: 'Match volleyball with a soft, grippy cover',
     badge: 'VOLLEYBALL'
-  },
-
-  /* ── Hockey ── */
-  {
-    id: 'punch-hockey-stick',
-    name: 'Punch Flash Field Hockey Stick',
-    price: 1500,
-    img: 'assets/punch_flash_field_hockey_stick.webp',
-    desc: 'Lightweight composite hockey stick for field play',
-    badge: 'HOCKEY'
-  },
-  {
-    id: 'triumph-dimpled-ball',
-    name: 'Triumph Dimpled Ball',
-    price: 350,
-    img: 'assets/triumph_dimpled_ball.webp',
-    desc: 'Dimpled hockey ball for training and matches',
-    badge: 'HOCKEY'
   },
 
   /* ── Tennis ── */
