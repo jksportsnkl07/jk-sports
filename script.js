@@ -303,7 +303,7 @@ var CATALOG = {
     tag:   'PREMIUM TURF BATS',
     desc:  'Premium Ceylon willow turf bats, built for turf wicket cricket.',
     items: [
-      { img: 'assets/71OzDMXDn8L.jpg', name: 'Sri Lankan Turf Bat', desc: 'Premium Ceylon willow, turf wickets', stock: true },
+      { img: 'assets/srilunken-turf-bat.webp', name: 'Sri Lankan Turf Bat', desc: 'Premium Ceylon willow, turf wickets', stock: true },
       { img: 'assets/71d5E8EJizL._AC_UF894,1000_QL80_.jpg', name: 'SL Turf Bat — Pro Grade', desc: 'Heavier profile for power hitters', stock: true },
       { img: 'assets/photo-1593766788306-28561086694e.jpg', name: 'SL Turf Bat — Lightweight', desc: 'Quicker pick-up, junior to club level', stock: true }
     ]
@@ -431,7 +431,7 @@ if (catalogImageIssues.length && typeof console !== 'undefined' && console.warn)
   console.warn('JK Sports catalog image issues detected', catalogImageIssues);
 }
 
-var CATALOG_SOURCE_URL = 'catalog.json?v=20261101';
+var CATALOG_SOURCE_URL = 'catalog.json?v=20261102';
 
 function refreshCatalogIssues() {
   catalogImageIssues = scanCatalogImageIssues(CATALOG);
@@ -533,7 +533,7 @@ var ORDER_PRODUCTS = [
     id: 'turf-bats',
     name: 'Sri Lunken Turf Bats',
     price: 2500,
-    img: 'assets/71OzDMXDn8L.jpg',
+    img: 'assets/srilunken-turf-bat.webp',
     desc: 'Premium Ceylon willow, perfect for turf wicket matches',
     badge: 'BESTSELLER'
   },
@@ -541,7 +541,7 @@ var ORDER_PRODUCTS = [
     id: 'kids-bats',
     name: 'Kids Plastic Bats',
     price: 450,
-    img: 'assets/product-jpeg-500x500 (1).webp',
+    img: 'assets/kids-plastic-bats.webp',
     desc: 'Durable plastic bats for young cricketers',
     badge: 'FOR KIDS'
   },
