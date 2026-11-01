@@ -129,10 +129,11 @@ var CATALOG = {
     desc:  'Everything you need for cricket — bats, balls, protective gear, and accessories.',
     items: [
       { img: 'https://images.jdmagicbox.com/comp/namakkal/b2/9999p4286.4286.210910111823.j4b2/catalogue/-hn65ksaxy5-250.jpg', name: 'Premium Cricket Bat', desc: 'Kashmir & English willow, Grade 1–3', stock: true },
-      { img: 'https://images.jdmagicbox.com/comp/namakkal/b2/9999p4286.4286.210910111823.j4b2/catalogue/jk-sports-namakkal-namakkal-ho-namakkal-sports-goods-dealers-xzgfv5zd2t.jpg', name: 'Match-Grade Ball', desc: 'SG, Kookaburra & local leather balls', stock: true },
+      { img: 'assets/stanford_cricket_ball.webp', name: 'Match-Grade Ball', desc: 'SG, Kookaburra & local leather balls', stock: true },
       { img: 'https://images.unsplash.com/photo-1646282814550-f521d9b57a59?w=400&auto=format&fit=crop', name: 'Sri Lankan Turf Bats', desc: 'Premium Ceylon willow, turf wickets', stock: true },
-      { img: 'https://images.unsplash.com/photo-1595210382266-2d0077c1f541?w=400&auto=format&fit=crop', name: 'Batting Pads & Gloves', desc: 'Protective gear for batsmen', stock: true },
-      { img: 'https://images.unsplash.com/photo-1593766832792-804353f52dbf?w=400&auto=format&fit=crop', name: 'Cricket Helmets', desc: 'ICC-spec protective helmets', stock: true },
+      { img: 'assets/white_cricket_test_pad.webp', name: 'Batting Pads & Gloves', desc: 'Protective gear for batsmen', stock: true },
+      { img: 'assets/blue_cricket_helmet.webp', name: 'Cricket Helmets', desc: 'ICC-spec protective helmets', stock: true },
+      { img: 'assets/cricket_stemp.webp', name: 'Cricket Stumps', desc: 'Kox Tons wooden stumps for practice & matches', stock: true },
       { img: 'https://images.unsplash.com/photo-1644984785457-facabdba5b16?w=400&auto=format&fit=crop', name: 'Wicket Keeping Kit', desc: 'Gloves, pads & inner gloves', stock: true }
     ]
   },
@@ -141,11 +142,11 @@ var CATALOG = {
     tag:   'BADMINTON ZONE',
     desc:  'Yonex rackets, shuttles, and accessories for every skill level.',
     items: [
-      { img: 'https://images.jdmagicbox.com/comp/namakkal/b2/9999p4286.4286.210910111823.j4b2/catalogue/jk-sports-namakkal-namakkal-ho-namakkal-sports-goods-dealers-yonex-04zxd27huf.jpg', name: 'Yonex Racket Pro', desc: 'Arcsaber / Astrox / Nanoray series', stock: true },
-      { img: 'https://images.unsplash.com/photo-1521537634581-0dced2fee2ef?w=400&auto=format&fit=crop', name: 'Feather Shuttlecocks', desc: 'Tournament & practice grade', stock: true },
+      { img: 'assets/yonex_badminton_racket.webp', name: 'Yonex Racket Pro', desc: 'Arcsaber / Astrox / Nanoray series', stock: true },
+      { img: 'assets/yonex_mavis_350_shuttlecocks.webp', name: 'Feather Shuttlecocks', desc: 'Tournament & practice grade', stock: true },
       { img: 'https://images.unsplash.com/photo-1708312604109-16c0be9326cd?w=400&auto=format&fit=crop', name: 'Grip Tape & Overgrips', desc: 'Sweat-absorbent racket grips', stock: true },
-      { img: 'https://images.unsplash.com/photo-1617696618050-b0fef0c666af?w=400&auto=format&fit=crop', name: 'Badminton Shoes', desc: 'Non-marking court soles', stock: true },
-      { img: 'https://images.unsplash.com/photo-1599391398131-cd12dfc6c24e?w=400&auto=format&fit=crop', name: 'Racket Stringing Service', desc: 'Custom tension stringing in-store', stock: true }
+      { img: 'assets/hycourt_neon_yellow_court_shoes.webp', name: 'Badminton Shoes', desc: 'Non-marking court soles', stock: true },
+      { img: 'assets/yonex_bg80_bg65_ti_strings.webp', name: 'Racket Stringing Service', desc: 'Custom tension stringing in-store', stock: true }
     ]
   },
   football: {
@@ -153,9 +154,12 @@ var CATALOG = {
     tag:   'BALL SPORTS ZONE',
     desc:  'Match balls and gear for football, volleyball, kabaddi, basketball and hockey.',
     items: [
-      { img: 'https://images.unsplash.com/photo-1575361204480-aadea25e6e68?w=400&auto=format&fit=crop', name: 'Match-Grade Football', desc: 'Size 4 & 5, TPU and leather', stock: true },
-      { img: 'https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=400&auto=format&fit=crop', name: 'Shin Guards', desc: 'Lightweight protective guards', stock: true },
-      { img: 'https://images.unsplash.com/photo-1551958219-acbc608c6623?w=400&auto=format&fit=crop', name: 'Football Boots / Cleats', desc: 'Firm-ground & turf studs', stock: true },
+      { img: 'assets/nivia_football.webp', name: 'Match-Grade Football', desc: 'Size 4 & 5, TPU and leather', stock: true },
+      { img: 'assets/mayor_club_shin_guards.webp', name: 'Shin Guards', desc: 'Lightweight protective guards', stock: true },
+      { img: 'assets/nivia_blue_football_boots.webp', name: 'Football Boots / Cleats', desc: 'Firm-ground & turf studs', stock: true },
+      { img: 'assets/nivia_blue_goalkeeper_gloves.webp', name: 'Nivia Blue Goalkeeper Gloves', desc: 'Grippy latex palms for match-day saves', stock: true },
+      { img: 'assets/nivia_carbonite_goalkeeper_gloves.webp', name: 'Nivia Carbonite Goalkeeper Gloves', desc: 'Carbonite range with reinforced palm grip', stock: true },
+      { img: 'assets/golden_football_boot_trophy.webp', name: 'Golden Football Boot Trophy', desc: 'Golden boot award trophy for tournaments', stock: true },
       { img: 'https://images.unsplash.com/photo-1546519638-68e109498ffc?w=400&auto=format&fit=crop', name: 'Goal Nets & Cones', desc: 'Training equipment for clubs', stock: true }
     ]
   },
@@ -164,7 +168,7 @@ var CATALOG = {
     tag:   'BALL SPORTS ZONE',
     desc:  'Indoor and outdoor basketballs plus support gear.',
     items: [
-      { img: 'https://images.unsplash.com/photo-1546519638-68e109498ffc?w=400&auto=format&fit=crop', name: 'Spalding Outdoor Ball', desc: 'Durable rubber outdoor ball', stock: true },
+      { img: 'assets/nivia_europa_basketball.webp', name: 'Nivia Europa Basketball', desc: 'Durable rubber outdoor ball', stock: true },
       { img: 'https://images.unsplash.com/photo-1519861531473-9200626188a1?w=400&auto=format&fit=crop', name: 'Indoor Rubber Ball', desc: 'Indoor court grip ball', stock: true },
       { img: 'https://images.unsplash.com/photo-1556817411-31ae72fa3ea0?w=400&auto=format&fit=crop', name: 'Ankle Support Guards', desc: 'Compression ankle braces', stock: true }
     ]
@@ -174,7 +178,7 @@ var CATALOG = {
     tag:   'BALL SPORTS ZONE',
     desc:  'Match volleyballs and knee support gear.',
     items: [
-      { img: 'https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?w=400&auto=format&fit=crop', name: 'Match Volleyball', desc: 'Official size & weight', stock: true },
+      { img: 'assets/nivia_white_green_ball.webp', name: 'Match Volleyball', desc: 'Official size & weight', stock: true },
       { img: 'https://images.unsplash.com/photo-1616347853803-5bc49f9e4e27?w=400&auto=format&fit=crop', name: 'Knee Pads', desc: 'Cushioned protective pads', stock: true }
     ]
   },
@@ -192,9 +196,9 @@ var CATALOG = {
     tag:   'BALL SPORTS ZONE',
     desc:  'Sticks, balls, and protective gear for hockey players.',
     items: [
-      { img: 'https://images.unsplash.com/photo-1548865379-3a7ddf7abe01?w=400&auto=format&fit=crop', name: 'Hockey Stick', desc: 'Composite & wooden sticks', stock: true },
-      { img: 'https://images.unsplash.com/photo-1515703407324-5f753afd8be8?w=400&auto=format&fit=crop', name: 'Hockey Ball', desc: 'Hard plastic match ball', stock: true },
-      { img: 'assets/hockey-shin-guards.jpg', name: 'Hockey Shin Guards', desc: 'Protective shin guards for hockey players', stock: true }
+      { img: 'assets/punch_flash_field_hockey_stick.webp', name: 'Hockey Stick', desc: 'Composite & wooden sticks', stock: true },
+      { img: 'assets/triumph_dimpled_ball.webp', name: 'Hockey Ball', desc: 'Hard plastic match ball', stock: true },
+      { img: 'assets/red_captain_shin_guards.webp', name: 'Hockey Shin Guards', desc: 'Protective shin guards for hockey players', stock: true }
     ]
   },
   tennis: {
@@ -202,8 +206,8 @@ var CATALOG = {
     tag:   'RACKET ZONE',
     desc:  'Rackets and balls for casual to professional play.',
     items: [
-      { img: 'https://images.unsplash.com/photo-1551773188-0801da12ddae?w=400&auto=format&fit=crop', name: 'Graphite Tennis Racket', desc: 'Beginner to pro-staff series', stock: true },
-      { img: 'https://images.unsplash.com/photo-1595435934249-5df7ed86e1c0?w=400&auto=format&fit=crop', name: 'Pressureless Tennis Balls', desc: 'Practice & match cans', stock: true },
+      { img: 'assets/head_ti_instinct_comp_tennis_racket.webp', name: 'Graphite Tennis Racket', desc: 'Beginner to pro-staff series', stock: true },
+      { img: 'assets/wilson_tour_premier_tennis_balls.webp', name: 'Pressureless Tennis Balls', desc: 'Practice & match cans', stock: true },
       { img: 'https://images.unsplash.com/photo-1612364741797-c3c1756afb91?w=400&auto=format&fit=crop', name: 'Vibration Dampeners', desc: 'String vibration control', stock: true },
       { img: 'assets/weighted-tennis-racket.jpg', name: 'Weighted Training Racket', desc: 'Extra-weight racket for strength & swing training', stock: true }
     ]
@@ -299,9 +303,9 @@ var CATALOG = {
     tag:   'PREMIUM TURF BATS',
     desc:  'Premium Ceylon willow turf bats, built for turf wicket cricket.',
     items: [
-      { img: 'https://images.unsplash.com/photo-1593766821405-f605e0f9535f?w=400&auto=format&fit=crop', name: 'Sri Lankan Turf Bat', desc: 'Premium Ceylon willow, turf wickets', stock: true },
-      { img: 'https://images.unsplash.com/photo-1677785643764-179393bc3842?w=400&auto=format&fit=crop', name: 'SL Turf Bat — Pro Grade', desc: 'Heavier profile for power hitters', stock: true },
-      { img: 'https://images.unsplash.com/photo-1593766788306-28561086694e?w=400&auto=format&fit=crop', name: 'SL Turf Bat — Lightweight', desc: 'Quicker pick-up, junior to club level', stock: true }
+      { img: 'assets/71OzDMXDn8L.jpg', name: 'Sri Lankan Turf Bat', desc: 'Premium Ceylon willow, turf wickets', stock: true },
+      { img: 'assets/71d5E8EJizL._AC_UF894,1000_QL80_.jpg', name: 'SL Turf Bat — Pro Grade', desc: 'Heavier profile for power hitters', stock: true },
+      { img: 'assets/photo-1593766788306-28561086694e.jpg', name: 'SL Turf Bat — Lightweight', desc: 'Quicker pick-up, junior to club level', stock: true }
     ]
   },
   skating: {
@@ -326,7 +330,8 @@ var CATALOG = {
       { img: 'assets/andriyko-podilnyk-sGRJ36ogml8-unsplash.jpg', name: 'Sports Bags', desc: 'Durable kit bags for gear and equipment', stock: true },
       { img: 'assets/joan-tran-reEySFadyJQ-unsplash.jpg', name: 'Water Bottles', desc: 'Sports water bottles, multiple sizes', stock: true },
       { img: 'assets/anton-savinov-Q5t8eNYgDsA-unsplash.jpg', name: 'Air Pumps', desc: 'Ball and tube air pumps with needles', stock: true },
-      { img: 'assets/arm-bands.jpg', name: 'Arm Bands', desc: 'Elastic arm bands for training and everyday wear', stock: true }
+      { img: 'assets/arm-bands.jpg', name: 'Arm Bands', desc: 'Elastic arm bands for training and everyday wear', stock: true },
+      { img: 'assets/trophy_collection_display.webp', name: 'Trophy Collection', desc: 'Trophies & awards for tournaments and events', stock: true }
     ]
   }
 };
@@ -426,7 +431,7 @@ if (catalogImageIssues.length && typeof console !== 'undefined' && console.warn)
   console.warn('JK Sports catalog image issues detected', catalogImageIssues);
 }
 
-var CATALOG_SOURCE_URL = 'catalog.json?v=20260708';
+var CATALOG_SOURCE_URL = 'catalog.json?v=20261101';
 
 function refreshCatalogIssues() {
   catalogImageIssues = scanCatalogImageIssues(CATALOG);
@@ -523,11 +528,12 @@ document.querySelectorAll('[role="button"]').forEach(function (el) {
    ORDER ZONE — PRODUCTS & CART & CHECKOUT & ADMIN
 ════════════════════════════════════════ */
 var ORDER_PRODUCTS = [
+  /* ── JK Sports signature products ── */
   {
     id: 'turf-bats',
     name: 'Sri Lunken Turf Bats',
     price: 2500,
-    img: 'assets/photo-1599982917650-21da4d09c437.jpg',
+    img: 'assets/71OzDMXDn8L.jpg',
     desc: 'Premium Ceylon willow, perfect for turf wicket matches',
     badge: 'BESTSELLER'
   },
@@ -535,7 +541,7 @@ var ORDER_PRODUCTS = [
     id: 'kids-bats',
     name: 'Kids Plastic Bats',
     price: 450,
-    img: 'assets/images (2).jpg',
+    img: 'assets/product-jpeg-500x500 (1).webp',
     desc: 'Durable plastic bats for young cricketers',
     badge: 'FOR KIDS'
   },
@@ -551,9 +557,199 @@ var ORDER_PRODUCTS = [
     id: 'cricket-kit-bag',
     name: 'Cricket Kit Bag',
     price: 1200,
-    img: 'assets/images (4).jpg',
+    img: 'assets/andriyko-podilnyk-sGRJ36ogml8-unsplash.jpg',
     desc: 'Spacious kit bag to carry all your gear',
     badge: 'NEW'
+  },
+
+  /* ── Cricket ── */
+  {
+    id: 'stanford-cricket-ball',
+    name: 'Stanford Cricket Ball',
+    price: 600,
+    img: 'assets/stanford_cricket_ball.webp',
+    desc: 'Premium leather cricket ball with SF Stanford branding',
+    badge: 'CRICKET'
+  },
+  {
+    id: 'blue-cricket-helmet',
+    name: 'Blue Cricket Helmet',
+    price: 1800,
+    img: 'assets/blue_cricket_helmet.webp',
+    desc: 'Protective cricket helmet for batting and keeping',
+    badge: 'CRICKET'
+  },
+  {
+    id: 'white-cricket-test-pad',
+    name: 'White Cricket Test Pad',
+    price: 1500,
+    img: 'assets/white_cricket_test_pad.webp',
+    desc: 'Test-grade batting pads for match protection',
+    badge: 'CRICKET'
+  },
+  {
+    id: 'cricket-stumps',
+    name: 'Cricket Stumps (Kox Tons)',
+    price: 1200,
+    img: 'assets/cricket_stemp.webp',
+    desc: 'Wooden stumps set for practice and matches',
+    badge: 'CRICKET'
+  },
+
+  /* ── Badminton ── */
+  {
+    id: 'yonex-badminton-racket',
+    name: 'Yonex Badminton Racket',
+    price: 3500,
+    img: 'assets/yonex_badminton_racket.webp',
+    desc: 'Yonex racket for club and tournament play',
+    badge: 'BADMINTON'
+  },
+  {
+    id: 'yonex-mavis-350',
+    name: 'Yonex Mavis 350 Shuttlecocks',
+    price: 550,
+    img: 'assets/yonex_mavis_350_shuttlecocks.webp',
+    desc: 'Nylon shuttlecocks for durable practice play',
+    badge: 'BADMINTON'
+  },
+  {
+    id: 'yonex-bg80-bg65-strings',
+    name: 'Yonex BG80 / BG65 Ti Strings',
+    price: 700,
+    img: 'assets/yonex_bg80_bg65_ti_strings.webp',
+    desc: 'High-performance badminton string sets',
+    badge: 'BADMINTON'
+  },
+  {
+    id: 'hycourt-court-shoes',
+    name: 'HyCourt Neon Yellow Court Shoes',
+    price: 2200,
+    img: 'assets/hycourt_neon_yellow_court_shoes.webp',
+    desc: 'Non-marking court shoes for badminton and indoor play',
+    badge: 'BADMINTON'
+  },
+
+  /* ── Football ── */
+  {
+    id: 'nivia-football',
+    name: 'Nivia Football',
+    price: 900,
+    img: 'assets/nivia_football.webp',
+    desc: 'Match-ready Nivia football for training and games',
+    badge: 'FOOTBALL'
+  },
+  {
+    id: 'nivia-blue-football-boots',
+    name: 'Nivia Blue Football Boots',
+    price: 1600,
+    img: 'assets/nivia_blue_football_boots.webp',
+    desc: 'Firm-ground football boots with a secure fit',
+    badge: 'FOOTBALL'
+  },
+  {
+    id: 'mayor-club-shin-guards',
+    name: 'Mayor Club Shin Guards',
+    price: 450,
+    img: 'assets/mayor_club_shin_guards.webp',
+    desc: 'Lightweight shin guards for club players',
+    badge: 'FOOTBALL'
+  },
+  {
+    id: 'red-captain-shin-guards',
+    name: 'Red Captain Shin Guards',
+    price: 400,
+    img: 'assets/red_captain_shin_guards.webp',
+    desc: 'Protective shin guards for match play',
+    badge: 'FOOTBALL'
+  },
+  {
+    id: 'nivia-blue-goalkeeper-gloves',
+    name: 'Nivia Blue Goalkeeper Gloves',
+    price: 1100,
+    img: 'assets/nivia_blue_goalkeeper_gloves.webp',
+    desc: 'Grippy goalkeeper gloves for match-day saves',
+    badge: 'FOOTBALL'
+  },
+  {
+    id: 'nivia-carbonite-goalkeeper-gloves',
+    name: 'Nivia Carbonite Goalkeeper Gloves',
+    price: 1400,
+    img: 'assets/nivia_carbonite_goalkeeper_gloves.webp',
+    desc: 'Carbonite range with reinforced palm grip',
+    badge: 'FOOTBALL'
+  },
+
+  /* ── Basketball / Volleyball ── */
+  {
+    id: 'nivia-europa-basketball',
+    name: 'Nivia Europa Basketball',
+    price: 1300,
+    img: 'assets/nivia_europa_basketball.webp',
+    desc: 'Durable basketball for indoor and outdoor courts',
+    badge: 'BASKETBALL'
+  },
+  {
+    id: 'nivia-volleyball',
+    name: 'Nivia White & Green Volleyball',
+    price: 800,
+    img: 'assets/nivia_white_green_ball.webp',
+    desc: 'Match volleyball with a soft, grippy cover',
+    badge: 'VOLLEYBALL'
+  },
+
+  /* ── Hockey ── */
+  {
+    id: 'punch-hockey-stick',
+    name: 'Punch Flash Field Hockey Stick',
+    price: 1500,
+    img: 'assets/punch_flash_field_hockey_stick.webp',
+    desc: 'Lightweight composite hockey stick for field play',
+    badge: 'HOCKEY'
+  },
+  {
+    id: 'triumph-dimpled-ball',
+    name: 'Triumph Dimpled Ball',
+    price: 350,
+    img: 'assets/triumph_dimpled_ball.webp',
+    desc: 'Dimpled hockey ball for training and matches',
+    badge: 'HOCKEY'
+  },
+
+  /* ── Tennis ── */
+  {
+    id: 'head-tennis-racket',
+    name: 'Head Ti. Instinct Comp Tennis Racket',
+    price: 4500,
+    img: 'assets/head_ti_instinct_comp_tennis_racket.webp',
+    desc: 'Head titanium tennis racket for all-court play',
+    badge: 'TENNIS'
+  },
+  {
+    id: 'wilson-tennis-balls',
+    name: 'Wilson Tour Premier Tennis Balls',
+    price: 450,
+    img: 'assets/wilson_tour_premier_tennis_balls.webp',
+    desc: 'Tournament-grade tennis balls',
+    badge: 'TENNIS'
+  },
+
+  /* ── Trophies ── */
+  {
+    id: 'golden-football-boot-trophy',
+    name: 'Golden Football Boot Trophy',
+    price: 2500,
+    img: 'assets/golden_football_boot_trophy.webp',
+    desc: 'Golden boot award trophy for tournaments',
+    badge: 'TROPHY'
+  },
+  {
+    id: 'trophy-collection-display',
+    name: 'Trophy Collection Display',
+    price: 5000,
+    img: 'assets/trophy_collection_display.webp',
+    desc: 'Trophies and awards for tournaments and events',
+    badge: 'TROPHY'
   }
 ];
 

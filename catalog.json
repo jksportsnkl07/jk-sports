@@ -11,7 +11,7 @@
         "stock": true
       },
       {
-        "img": "assets/manoj-poosam-bs25aPG9tRs-unsplash.jpg",
+        "img": "assets/stanford_cricket_ball.webp",
         "name": "Match-Grade Ball",
         "desc": "SG, Kookaburra & local leather balls",
         "stock": true
@@ -23,15 +23,21 @@
         "stock": true
       },
       {
-        "img": "assets/kabir-cheema-vBdnsrIlueo-unsplash.jpg",
+        "img": "assets/white_cricket_test_pad.webp",
         "name": "Batting Pads & Gloves",
         "desc": "Protective gear for batsmen",
         "stock": true
       },
       {
-        "img": "assets/moonwalkr-Ysmv55PONTo-unsplash.jpg",
+        "img": "assets/blue_cricket_helmet.webp",
         "name": "Cricket Helmets",
         "desc": "ICC-spec protective helmets",
+        "stock": true
+      },
+      {
+        "img": "assets/cricket_stemp.webp",
+        "name": "Cricket Stumps",
+        "desc": "Kox Tons wooden stumps for practice & matches",
         "stock": true
       },
       {
@@ -48,13 +54,13 @@
     "desc": "Yonex rackets, shuttles, and accessories for every skill level.",
     "items": [
       {
-        "img": "assets/renith-r-MLU_X1d3ofQ-unsplash.jpg",
+        "img": "assets/yonex_badminton_racket.webp",
         "name": "Yonex Racket Pro",
         "desc": "Arcsaber / Astrox / Nanoray series",
         "stock": true
       },
       {
-        "img": "assets/d268ed_af3a5cfbd0534d74b87820b9fb34acf1~mv2.png",
+        "img": "assets/yonex_mavis_350_shuttlecocks.webp",
         "name": "Feather Shuttlecocks",
         "desc": "Tournament & practice grade",
         "stock": true
@@ -66,13 +72,13 @@
         "stock": true
       },
       {
-        "img": "assets/A_dcc4299e-5932-4921-95fe-4ade9a061cbd.webp",
+        "img": "assets/hycourt_neon_yellow_court_shoes.webp",
         "name": "Badminton Shoes",
         "desc": "Non-marking court soles",
         "stock": true
       },
       {
-        "img": "assets/photo-1599391398131-cd12dfc6c24e.jpg",
+        "img": "assets/yonex_bg80_bg65_ti_strings.webp",
         "name": "Racket Stringing Service",
         "desc": "Custom tension stringing in-store",
         "stock": true
@@ -85,21 +91,39 @@
     "desc": "Match balls and gear for football, volleyball, kabaddi, basketball and hockey.",
     "items": [
       {
-        "img": "assets/md-mahdi-lQpFRPrepQ8-unsplash.jpg",
+        "img": "assets/nivia_football.webp",
         "name": "Match-Grade Football",
         "desc": "Size 4 & 5, TPU and leather",
         "stock": true
       },
       {
-        "img": "assets/anastase-maragos-9QLqrRyrKyc-unsplash.jpg",
+        "img": "assets/mayor_club_shin_guards.webp",
         "name": "Shin Guards",
         "desc": "Lightweight protective guards",
         "stock": true
       },
       {
-        "img": "assets/fachry-zella-devandra-Yta-zdP9PVM-unsplash.jpg",
+        "img": "assets/nivia_blue_football_boots.webp",
         "name": "Football Boots",
         "desc": "Firm-ground & turf studs",
+        "stock": true
+      },
+      {
+        "img": "assets/nivia_blue_goalkeeper_gloves.webp",
+        "name": "Nivia Blue Goalkeeper Gloves",
+        "desc": "Grippy latex palms for match-day saves",
+        "stock": true
+      },
+      {
+        "img": "assets/nivia_carbonite_goalkeeper_gloves.webp",
+        "name": "Nivia Carbonite Goalkeeper Gloves",
+        "desc": "Carbonite range with reinforced palm grip",
+        "stock": true
+      },
+      {
+        "img": "assets/golden_football_boot_trophy.webp",
+        "name": "Golden Football Boot Trophy",
+        "desc": "Golden boot award trophy for tournaments",
         "stock": true
       },
       {
@@ -116,7 +140,7 @@
     "desc": "Indoor and outdoor basketballs plus support gear.",
     "items": [
       {
-        "img": "assets/2B0A1298.webp",
+        "img": "assets/nivia_europa_basketball.webp",
         "name": "NVIA Outdoor Ball",
         "desc": "Durable rubber outdoor ball",
         "stock": true
@@ -141,7 +165,7 @@
     "desc": "Match volleyballs and knee support gear.",
     "items": [
       {
-        "img": "assets/caglar-oskay-pYHFDv6vI-o-unsplash.jpg",
+        "img": "assets/nivia_white_green_ball.webp",
         "name": "Match Volleyball",
         "desc": "Official size & weight",
         "stock": true
@@ -179,19 +203,19 @@
     "desc": "Sticks, balls, and protective gear for hockey players.",
     "items": [
       {
-        "img": "assets/julian-gentile---_JOIilJBg-unsplash.jpg",
+        "img": "assets/punch_flash_field_hockey_stick.webp",
         "name": "Hockey Stick",
         "desc": "Composite & wooden sticks",
         "stock": true
       },
       {
-        "img": "assets/astrid-schaffner-bi_amI3F4co-unsplash.jpg",
+        "img": "assets/triumph_dimpled_ball.webp",
         "name": "Hockey Ball",
         "desc": "Hard plastic match ball",
         "stock": true
       },
       {
-        "img": "assets/GUAFPHDHEY58ZPBT_1.jpg",
+        "img": "assets/red_captain_shin_guards.webp",
         "name": "Hockey Shin Guards",
         "desc": "Protective shin guards for hockey players",
         "stock": true
@@ -204,13 +228,13 @@
     "desc": "Rackets and balls for casual to professional play.",
     "items": [
       {
-        "img": "assets/renith-r-MLU_X1d3ofQ-unsplash.jpg",
+        "img": "assets/head_ti_instinct_comp_tennis_racket.webp",
         "name": "Graphite Tennis Racket",
         "desc": "Beginner to pro-staff series",
         "stock": true
       },
       {
-        "img": "assets/guilherme-maggieri-OH5g9IgcMWs-unsplash.jpg",
+        "img": "assets/wilson_tour_premier_tennis_balls.webp",
         "name": "Tennis Balls",
         "desc": "Practice & match cans",
         "stock": true
@@ -441,7 +465,7 @@
         "stock": true
       },
       {
-        "img": "assets/product-jpeg-500x500.webp",
+        "img": "assets/71d5E8EJizL._AC_UF894,1000_QL80_.jpg",
         "name": "SL Turf Bat — Pro Grade",
         "desc": "Heavier profile for power hitters",
         "stock": true
@@ -530,6 +554,12 @@
         "img": "assets/images.jpg",
         "name": "Arm Bands",
         "desc": "Elastic arm bands for training and everyday wear",
+        "stock": true
+      },
+      {
+        "img": "assets/trophy_collection_display.webp",
+        "name": "Trophy Collection",
+        "desc": "Trophies & awards for tournaments and events",
         "stock": true
       }
     ]
