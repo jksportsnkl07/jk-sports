@@ -431,7 +431,7 @@ if (catalogImageIssues.length && typeof console !== 'undefined' && console.warn)
   console.warn('JK Sports catalog image issues detected', catalogImageIssues);
 }
 
-var CATALOG_SOURCE_URL = 'catalog.json?v=20261105';
+var CATALOG_SOURCE_URL = 'catalog.json?v=20261108';
 
 function refreshCatalogIssues() {
   catalogImageIssues = scanCatalogImageIssues(CATALOG);
