@@ -431,7 +431,7 @@ if (catalogImageIssues.length && typeof console !== 'undefined' && console.warn)
   console.warn('JK Sports catalog image issues detected', catalogImageIssues);
 }
 
-var CATALOG_SOURCE_URL = 'catalog.json?v=20261104';
+var CATALOG_SOURCE_URL = 'catalog.json?v=20261105';
 
 function refreshCatalogIssues() {
   catalogImageIssues = scanCatalogImageIssues(CATALOG);
@@ -545,6 +545,11 @@ var ORDER_PRODUCTS = [
     name: 'Sri Lunken Turf Bats',
     price: 2500,
     img: 'assets/srilunken-turf-bat.webp',
+    gallery: [
+      'assets/products/srilunken_turf_cricket_bats/front.png',
+      'assets/products/srilunken_turf_cricket_bats/side.png',
+      'assets/products/srilunken_turf_cricket_bats/back.png'
+    ],
     desc: 'Premium Ceylon willow, perfect for turf wicket matches',
     badge: 'BESTSELLER'
   },
@@ -553,6 +558,11 @@ var ORDER_PRODUCTS = [
     name: 'Kids Plastic Bats',
     price: 450,
     img: 'assets/kids-plastic-bats.webp',
+    gallery: [
+      'assets/products/vinex_cricket_set/front.png',
+      'assets/products/vinex_cricket_set/side.png',
+      'assets/products/vinex_cricket_set/back.png'
+    ],
     desc: 'Durable plastic bats for young cricketers',
     badge: 'FOR KIDS'
   },
@@ -571,6 +581,11 @@ var ORDER_PRODUCTS = [
     name: 'Yonex Badminton Racket',
     price: 3500,
     img: 'assets/yonex_badminton_racket.webp',
+    gallery: [
+      'assets/products/yonex_badminton_racket/front.png',
+      'assets/products/yonex_badminton_racket/side.png',
+      'assets/products/yonex_badminton_racket/back.png'
+    ],
     desc: 'Yonex racket for club and tournament play',
     badge: 'BADMINTON'
   },
@@ -579,6 +594,11 @@ var ORDER_PRODUCTS = [
     name: 'HyCourt Neon Yellow Court Shoes',
     price: 2200,
     img: 'assets/hycourt_neon_yellow_court_shoes.webp',
+    gallery: [
+      'assets/products/yellow_sports_shoes/front.png',
+      'assets/products/yellow_sports_shoes/side.png',
+      'assets/products/yellow_sports_shoes/back.png'
+    ],
     desc: 'Non-marking court shoes for badminton and indoor play',
     badge: 'BADMINTON'
   },
@@ -589,6 +609,11 @@ var ORDER_PRODUCTS = [
     name: 'Nivia Football',
     price: 900,
     img: 'assets/nivia_football.webp',
+    gallery: [
+      'assets/products/nivia_football/front.png',
+      'assets/products/nivia_football/side.png',
+      'assets/products/nivia_football/back.png'
+    ],
     desc: 'Match-ready Nivia football for training and games',
     badge: 'FOOTBALL'
   },
@@ -597,6 +622,11 @@ var ORDER_PRODUCTS = [
     name: 'Nivia Blue Football Boots',
     price: 1600,
     img: 'assets/nivia_blue_football_boots.webp',
+    gallery: [
+      'assets/products/blue_football_shoes/front.png',
+      'assets/products/blue_football_shoes/side.png',
+      'assets/products/blue_football_shoes/back.png'
+    ],
     desc: 'Firm-ground football boots with a secure fit',
     badge: 'FOOTBALL'
   },
@@ -605,6 +635,11 @@ var ORDER_PRODUCTS = [
     name: 'Mayor Club Shin Guards',
     price: 450,
     img: 'assets/mayor_club_shin_guards.webp',
+    gallery: [
+      'assets/products/mayor_shin_guards/front.png',
+      'assets/products/mayor_shin_guards/side.png',
+      'assets/products/mayor_shin_guards/back.png'
+    ],
     desc: 'Lightweight shin guards for club players',
     badge: 'FOOTBALL'
   },
@@ -613,6 +648,11 @@ var ORDER_PRODUCTS = [
     name: 'Red Captain Shin Guards',
     price: 400,
     img: 'assets/red_captain_shin_guards.webp',
+    gallery: [
+      'assets/products/captain_shin_guards/front.png',
+      'assets/products/captain_shin_guards/side.png',
+      'assets/products/captain_shin_guards/back.png'
+    ],
     desc: 'Protective shin guards for match play',
     badge: 'FOOTBALL'
   },
@@ -621,6 +661,11 @@ var ORDER_PRODUCTS = [
     name: 'Nivia Carbonite Goalkeeper Gloves',
     price: 1400,
     img: 'assets/nivia_carbonite_goalkeeper_gloves.webp',
+    gallery: [
+      'assets/products/nivia_goalkeeper_gloves/front.png',
+      'assets/products/nivia_goalkeeper_gloves/side.png',
+      'assets/products/nivia_goalkeeper_gloves/back.png'
+    ],
     desc: 'Carbonite range with reinforced palm grip',
     badge: 'FOOTBALL'
   },
@@ -631,6 +676,11 @@ var ORDER_PRODUCTS = [
     name: 'Nivia Europa Basketball',
     price: 1300,
     img: 'assets/nivia_europa_basketball.webp',
+    gallery: [
+      'assets/products/nivia_europa_basketball/front.png',
+      'assets/products/nivia_europa_basketball/side.png',
+      'assets/products/nivia_europa_basketball/back.png'
+    ],
     desc: 'Durable basketball for indoor and outdoor courts',
     badge: 'BASKETBALL'
   },
@@ -639,6 +689,11 @@ var ORDER_PRODUCTS = [
     name: 'Nivia White & Green Volleyball',
     price: 800,
     img: 'assets/nivia_white_green_ball.webp',
+    gallery: [
+      'assets/products/nivia_volleyball/front.png',
+      'assets/products/nivia_volleyball/side.png',
+      'assets/products/nivia_volleyball/back.png'
+    ],
     desc: 'Match volleyball with a soft, grippy cover',
     badge: 'VOLLEYBALL'
   },
@@ -649,6 +704,11 @@ var ORDER_PRODUCTS = [
     name: 'Head Ti. Instinct Comp Tennis Racket',
     price: 4500,
     img: 'assets/head_ti_instinct_comp_tennis_racket.webp',
+    gallery: [
+      'assets/products/head_tennis_racket/front.png',
+      'assets/products/head_tennis_racket/side.png',
+      'assets/products/head_tennis_racket/back.png'
+    ],
     desc: 'Head titanium tennis racket for all-court play',
     badge: 'TENNIS'
   },
@@ -657,6 +717,11 @@ var ORDER_PRODUCTS = [
     name: 'Wilson Tour Premier Tennis Balls',
     price: 450,
     img: 'assets/wilson_tour_premier_tennis_balls.webp',
+    gallery: [
+      'assets/products/wilson_tennis_balls/front.png',
+      'assets/products/wilson_tennis_balls/side.png',
+      'assets/products/wilson_tennis_balls/back.png'
+    ],
     desc: 'Tournament-grade tennis balls',
     badge: 'TENNIS'
   },
@@ -667,6 +732,11 @@ var ORDER_PRODUCTS = [
     name: 'Golden Football Boot Trophy',
     price: 2500,
     img: 'assets/golden_football_boot_trophy.webp',
+    gallery: [
+      'assets/products/gold_football_trophy/front.png',
+      'assets/products/gold_football_trophy/side.png',
+      'assets/products/gold_football_trophy/back.png'
+    ],
     desc: 'Golden boot award trophy for tournaments',
     badge: 'TROPHY'
   },
@@ -675,6 +745,11 @@ var ORDER_PRODUCTS = [
     name: 'Trophy Collection Display',
     price: 5000,
     img: 'assets/trophy_collection_display.webp',
+    gallery: [
+      'assets/products/trophy_collection/front.png',
+      'assets/products/trophy_collection/side.png',
+      'assets/products/trophy_collection/back.png'
+    ],
     desc: 'Trophies and awards for tournaments and events',
     badge: 'TROPHY'
   }
@@ -690,11 +765,26 @@ function renderOrderProducts() {
   var grid = document.getElementById('orderGrid');
   if (!grid) return;
   grid.innerHTML = ORDER_PRODUCTS.map(function (p) {
+    var hasGallery = Array.isArray(p.gallery) && p.gallery.length > 1;
     return (
       '<div class="order-card">' +
-        '<div class="order-img-wrap">' +
+        '<div class="order-img-wrap' + (hasGallery ? ' has-gallery' : '') + '"' +
+          (hasGallery
+            ? ' role="button" tabindex="0" data-gallery-id="' + p.id + '"' +
+              ' aria-label="View all angles of ' + escapeHtml(p.name) + '"'
+            : '') +
+        '>' +
           '<img src="' + p.img + '" alt="' + escapeHtml(p.name) + '" loading="lazy" decoding="async" />' +
           (p.badge ? '<span class="order-badge">' + p.badge + '</span>' : '') +
+          (hasGallery
+            ? '<span class="order-views-badge">' +
+                '<svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
+                  '<circle cx="12" cy="12" r="3.2"></circle>' +
+                  '<path d="M2.5 12s3.6-6.5 9.5-6.5S21.5 12 21.5 12s-3.6 6.5-9.5 6.5S2.5 12 2.5 12z"></path>' +
+                '</svg>' +
+                p.gallery.length + ' Views' +
+              '</span>'
+            : '') +
         '</div>' +
         '<div class="order-info">' +
           '<h4>' + escapeHtml(p.name) + '</h4>' +
@@ -709,6 +799,89 @@ function renderOrderProducts() {
     );
   }).join('');
 }
+
+/* ── PRODUCT 3-VIEW GALLERY ── */
+var GALLERY_LABELS = ['Front view', 'Side view', 'Back view'];
+var galleryProduct = null;
+var galleryIndex = 0;
+
+function findOrderProduct(id) {
+  return ORDER_PRODUCTS.find(function (p) { return p.id === id; });
+}
+
+function openGallery(productId) {
+  var p = findOrderProduct(productId);
+  if (!p || !Array.isArray(p.gallery) || !p.gallery.length) return;
+
+  galleryProduct = p;
+  galleryIndex = 0;
+
+  var titleEl = document.getElementById('galleryTitle');
+  var priceEl = document.getElementById('galleryPrice');
+  var thumbsEl = document.getElementById('galleryThumbs');
+  var modalEl = document.getElementById('galleryModal');
+
+  if (titleEl) titleEl.textContent = p.name;
+  if (priceEl) priceEl.textContent = '₹' + p.price.toLocaleString('en-IN');
+
+  if (thumbsEl) {
+    thumbsEl.innerHTML = p.gallery.map(function (src, i) {
+      return '<button type="button" class="gallery-thumb" data-index="' + i + '" aria-label="' +
+        (GALLERY_LABELS[i] || 'View ' + (i + 1)) + '">' +
+        '<img src="' + src + '" alt="" loading="lazy" decoding="async" />' +
+      '</button>';
+    }).join('');
+  }
+
+  updateGalleryView();
+
+  if (modalEl) {
+    modalEl.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+}
+
+function updateGalleryView() {
+  if (!galleryProduct) return;
+
+  var mainEl = document.getElementById('galleryMain');
+  var labelEl = document.getElementById('galleryViewLabel');
+  var prevBtn = document.getElementById('galleryPrev');
+  var nextBtn = document.getElementById('galleryNext');
+  var thumbs = document.querySelectorAll('#galleryThumbs .gallery-thumb');
+  var total = galleryProduct.gallery.length;
+
+  if (mainEl) {
+    mainEl.src = galleryProduct.gallery[galleryIndex];
+    mainEl.alt = galleryProduct.name + ' — ' + (GALLERY_LABELS[galleryIndex] || 'View ' + (galleryIndex + 1));
+  }
+  if (labelEl) {
+    labelEl.textContent = (GALLERY_LABELS[galleryIndex] || 'View ' + (galleryIndex + 1)) +
+      ' · ' + (galleryIndex + 1) + '/' + total;
+  }
+  if (prevBtn) prevBtn.disabled = galleryIndex === 0;
+  if (nextBtn) nextBtn.disabled = galleryIndex === total - 1;
+
+  thumbs.forEach(function (btn, i) {
+    btn.classList.toggle('active', i === galleryIndex);
+  });
+}
+
+function stepGallery(delta) {
+  if (!galleryProduct) return;
+  var total = galleryProduct.gallery.length;
+  galleryIndex = (galleryIndex + delta + total) % total;
+  updateGalleryView();
+}
+
+function closeGallery() {
+  var modalEl = document.getElementById('galleryModal');
+  if (modalEl) modalEl.classList.remove('open');
+  document.body.style.overflow = '';
+  galleryProduct = null;
+}
+window.openGallery = openGallery;
+window.closeGallery = closeGallery;
 
 /* ── CART STATE ── */
 function getCart() {
@@ -1078,13 +1251,63 @@ document.addEventListener('DOMContentLoaded', function () {
     orderGrid.addEventListener('click', function (e) {
       var addBtn = e.target.closest('.btn-add-cart');
       var buyBtn = e.target.closest('.btn-buy-now');
+      var galleryEl = e.target.closest('[data-gallery-id]');
       if (addBtn) {
         addToCart(addBtn.dataset.id);
       } else if (buyBtn) {
         buyNow(buyBtn.dataset.id);
+      } else if (galleryEl) {
+        openGallery(galleryEl.dataset.galleryId);
       }
     });
+
+    orderGrid.addEventListener('keydown', function (e) {
+      if (e.key !== 'Enter' && e.key !== ' ') return;
+      var galleryEl = e.target.closest('[data-gallery-id]');
+      if (!galleryEl) return;
+      e.preventDefault();
+      openGallery(galleryEl.dataset.galleryId);
+    });
   }
+
+  /* 3-view gallery controls */
+  var galleryModal = document.getElementById('galleryModal');
+  if (galleryModal) {
+    galleryModal.addEventListener('click', function (e) {
+      if (e.target === this) closeGallery();
+    });
+  }
+  var galleryCloseBtn = document.getElementById('galleryCloseBtn');
+  if (galleryCloseBtn) galleryCloseBtn.addEventListener('click', closeGallery);
+
+  var galleryPrev = document.getElementById('galleryPrev');
+  if (galleryPrev) galleryPrev.addEventListener('click', function () { stepGallery(-1); });
+
+  var galleryNext = document.getElementById('galleryNext');
+  if (galleryNext) galleryNext.addEventListener('click', function () { stepGallery(1); });
+
+  var galleryThumbs = document.getElementById('galleryThumbs');
+  if (galleryThumbs) {
+    galleryThumbs.addEventListener('click', function (e) {
+      var thumb = e.target.closest('.gallery-thumb');
+      if (!thumb) return;
+      galleryIndex = parseInt(thumb.dataset.index, 10) || 0;
+      updateGalleryView();
+    });
+  }
+
+  document.addEventListener('keydown', function (e) {
+    if (!galleryProduct) return;
+    if (e.key === 'Escape') {
+      closeGallery();
+    } else if (e.key === 'ArrowLeft') {
+      e.preventDefault();
+      stepGallery(-1);
+    } else if (e.key === 'ArrowRight') {
+      e.preventDefault();
+      stepGallery(1);
+    }
+  });
 
   /* Admin access check */
   checkAdminAccess();
