@@ -23,11 +23,16 @@
   <meta name="twitter:description" content="Cricket, badminton, football, gym gear and custom sublimation jerseys — two branches in Namakkal." />
   <meta name="twitter:image" content="https://poojasri06.github.io/jk-sports/assets/og-image.jpg" />
 
-  <!-- ════ Favicons ════ -->
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
-  <link rel="shortcut icon" href="assets/favicon.ico" />
+  <!-- ════ Favicons ════
+       favicon.ico lives at the site root too, so browsers that request
+       /favicon.ico on their own (Chrome does this) still find it.
+       The ?v= suffix is a cache-buster: Chrome caches "no favicon" for a
+       page URL very aggressively, and a new URL forces it to re-read them. -->
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png?v=20261111" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png?v=20261111" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png?v=20261111" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
