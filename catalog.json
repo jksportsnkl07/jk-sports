@@ -131,18 +131,12 @@
   "basketball": {
     "title": "Basketball Gear",
     "tag": "BALL SPORTS ZONE",
-    "desc": "Indoor and outdoor basketballs plus support gear.",
+    "desc": "Outdoor basketballs plus support gear.",
     "items": [
       {
         "img": "assets/nivia_europa_basketball.webp",
-        "name": "NVIA Outdoor Ball",
+        "name": "NIVIA Outdoor Ball",
         "desc": "Durable rubber outdoor ball",
-        "stock": true
-      },
-      {
-        "img": "assets/71Hk7LW-NmL.jpg",
-        "name": "Indoor Rubber Ball",
-        "desc": "Indoor court grip ball",
         "stock": true
       },
       {

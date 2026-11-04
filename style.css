@@ -71,6 +71,7 @@ header {
   transition: padding 0.3s;
 }
 nav {
+  position: relative;
   max-width: var(--max);
   margin: 0 auto;
   display: flex;
@@ -92,6 +93,35 @@ nav {
 .nav-links a { text-decoration: none; color: #555; font-size: 0.85rem; font-weight: 500; transition: 0.2s; white-space: nowrap; }
 .nav-links a:hover, .nav-links a.active { color: var(--primary); font-weight: 700; }
 .nav-actions { display: flex; align-items: center; gap: 1rem; flex-shrink: 0; }
+
+/* ── Mobile menu button (hidden on desktop) ── */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 40px;
+  height: 40px;
+  padding: 0 9px;
+  border: 1px solid var(--light-border);
+  border-radius: 12px;
+  background: #fff;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background 0.2s, border-color 0.2s;
+}
+.nav-toggle:hover { border-color: var(--primary); }
+.nav-toggle-bar {
+  display: block;
+  width: 100%;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--text-main);
+  transition: transform 0.25s ease, opacity 0.2s ease;
+}
+nav.menu-open .nav-toggle-bar:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+nav.menu-open .nav-toggle-bar:nth-child(2) { opacity: 0; }
+nav.menu-open .nav-toggle-bar:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 .btn-nav-primary {
   background: var(--primary); color: white;
   padding: 0.55rem 1.1rem; border-radius: 50px;
@@ -546,44 +576,61 @@ footer { padding: 4rem 1.5rem 2rem; background: var(--light-bg); }
 }
 
 /* ────────────────────────────────────────────────────────
-   MOBILE NAV — keeps the SAME single-row layout as desktop
-   (logo · links · Find Store button, all in one bar).
-   No hamburger menu. If the links don't all fit on very
-   narrow phones, the link row scrolls horizontally instead
-   of wrapping to a second line.
+   MOBILE NAV — hamburger menu.
+   Desktop keeps the single-row layout (logo · links · buttons).
+   At ≤768px the links collapse into a dropdown panel toggled
+   by the hamburger button, so nothing overflows on phones.
 ──────────────────────────────────────────────────────── */
 @media (max-width: 768px) {
   header { padding: 0.6rem 0.75rem; }
   nav {
     padding: 0.5rem 0.75rem;
     border-radius: 18px;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: nowrap;
   }
   .nav-logo { gap: 0.5rem; }
   .nav-brand { font-size: 1rem; }
   .nav-logo-img { width: 30px; height: 30px; }
 
-  .nav-links {
-    order: 0;
-    width: auto;
-    flex: 1 1 auto;
-    justify-content: flex-start;
-    gap: 0.85rem;
-    padding-top: 0;
-    border-top: none;
-    margin: 0 0.5rem;
-    overflow-x: auto;
-    flex-wrap: nowrap;
-    white-space: nowrap;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
-    mask-image: linear-gradient(to right, black 92%, transparent 100%);
-  }
-  .nav-links::-webkit-scrollbar { display: none; }
-  .nav-links a { font-size: 0.78rem; flex-shrink: 0; }
+  .nav-toggle { display: inline-flex; margin-left: 0.5rem; }
 
-  .nav-actions { order: 0; flex-shrink: 0; }
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    right: 0;
+    z-index: 20;
+    flex-direction: column;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 0;
+    margin: 0;
+    padding: 0.5rem;
+    background: #fff;
+    border: 1px solid var(--light-border);
+    border-radius: 16px;
+    box-shadow: 0 16px 40px rgba(8, 12, 20, 0.16);
+    max-height: 70vh;
+    overflow-y: auto;
+  }
+  nav.menu-open .nav-links { display: flex; }
+  .nav-links a {
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding: 0.7rem 0.85rem;
+    border-radius: 10px;
+    color: var(--text-main);
+    white-space: normal;
+  }
+  .nav-links a:hover, .nav-links a.active {
+    background: rgba(0, 102, 255, 0.08);
+    color: var(--primary);
+  }
+
+  .nav-actions { order: 0; flex-shrink: 0; margin-left: auto; }
   .btn-nav-primary { padding: 0.45rem 0.9rem; font-size: 0.72rem; }
 
   #hero { min-height: 100svh; align-items: flex-start; padding: 0; overflow: hidden; }
@@ -679,8 +726,7 @@ footer { padding: 4rem 1.5rem 2rem; background: var(--light-bg); }
   nav { padding: 0.45rem 0.65rem; border-radius: 14px; }
   .nav-brand { font-size: 0.95rem; }
   .nav-logo-img { width: 28px; height: 28px; }
-  .nav-links { gap: 0.65rem; }
-  .nav-links a { font-size: 0.72rem; }
+  .nav-links a { font-size: 0.9rem; }
   .btn-nav-primary { padding: 0.4rem 0.75rem; font-size: 0.66rem; }
   .hero-h1 { font-size: clamp(1.8rem, 9vw, 2.2rem); }
   .hero-badge { font-size: 0.55rem; letter-spacing: 0.5px; }
@@ -1201,8 +1247,7 @@ footer { padding: 4rem 1.5rem 2rem; background: var(--light-bg); }
   .zone-grid { grid-template-columns: 1fr; }
   nav { padding: 0.4rem 0.55rem; }
   .nav-brand { display: none; }
-  .nav-links { gap: 0.5rem; }
-  .nav-links a { font-size: 0.68rem; }
+  .nav-links a { font-size: 0.88rem; }
   .btn-nav-primary { padding: 0.35rem 0.65rem; font-size: 0.62rem; }
 }
 

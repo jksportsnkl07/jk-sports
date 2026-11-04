@@ -165,10 +165,9 @@ var CATALOG = {
   basketball: {
     title: 'Basketball Gear',
     tag:   'BALL SPORTS ZONE',
-    desc:  'Indoor and outdoor basketballs plus support gear.',
+    desc:  'Outdoor basketballs plus support gear.',
     items: [
-      { img: 'assets/nivia_europa_basketball.webp', name: 'Nivia Europa Basketball', desc: 'Durable rubber outdoor ball', stock: true },
-      { img: 'https://images.unsplash.com/photo-1519861531473-9200626188a1?w=400&auto=format&fit=crop', name: 'Indoor Rubber Ball', desc: 'Indoor court grip ball', stock: true },
+      { img: 'assets/nivia_europa_basketball.webp', name: 'NIVIA Outdoor Ball', desc: 'Durable rubber outdoor ball', stock: true },
       { img: 'https://images.unsplash.com/photo-1556817411-31ae72fa3ea0?w=400&auto=format&fit=crop', name: 'Ankle Support Guards', desc: 'Compression ankle braces', stock: true }
     ]
   },
@@ -431,7 +430,7 @@ if (catalogImageIssues.length && typeof console !== 'undefined' && console.warn)
   console.warn('JK Sports catalog image issues detected', catalogImageIssues);
 }
 
-var CATALOG_SOURCE_URL = 'catalog.json?v=20261108';
+var CATALOG_SOURCE_URL = 'catalog.json?v=20261110';
 
 function refreshCatalogIssues() {
   catalogImageIssues = scanCatalogImageIssues(CATALOG);
@@ -543,7 +542,7 @@ var ORDER_PRODUCTS = [
   {
     id: 'turf-bats',
     name: 'Sri Lunken Turf Bats',
-    price: 2500,
+    price: 2200,
     img: 'assets/srilunken-turf-bat.webp',
     gallery: [
       'assets/products/srilunken_turf_cricket_bats/front.png',
@@ -556,7 +555,7 @@ var ORDER_PRODUCTS = [
   {
     id: 'kids-bats',
     name: 'Kids Plastic Bats',
-    price: 450,
+    price: 650,
     img: 'assets/kids-plastic-bats.webp',
     gallery: [
       'assets/products/vinex_cricket_set/front.png',
@@ -569,7 +568,7 @@ var ORDER_PRODUCTS = [
   {
     id: 'sublimation-jersey',
     name: 'Sublimation Jercy',
-    price: 800,
+    price: 450,
     img: 'assets/photo-1773355579207-4bc7a0915e74.jpg',
     desc: 'Custom sublimation printed jerseys for teams',
     badge: 'CUSTOM'
@@ -579,7 +578,7 @@ var ORDER_PRODUCTS = [
   {
     id: 'yonex-badminton-racket',
     name: 'Yonex Badminton Racket',
-    price: 3500,
+    price: 2690,
     img: 'assets/yonex_badminton_racket.webp',
     gallery: [
       'assets/products/yonex_badminton_racket/front.png',
@@ -592,7 +591,7 @@ var ORDER_PRODUCTS = [
   {
     id: 'hycourt-court-shoes',
     name: 'HyCourt Neon Yellow Court Shoes',
-    price: 2200,
+    price: 2199,
     img: 'assets/hycourt_neon_yellow_court_shoes.webp',
     gallery: [
       'assets/products/yellow_sports_shoes/front.png',
@@ -607,7 +606,7 @@ var ORDER_PRODUCTS = [
   {
     id: 'nivia-football',
     name: 'Nivia Football',
-    price: 900,
+    price: 1619,
     img: 'assets/nivia_football.webp',
     gallery: [
       'assets/products/nivia_football/front.png',
@@ -620,7 +619,7 @@ var ORDER_PRODUCTS = [
   {
     id: 'nivia-blue-football-boots',
     name: 'Nivia Blue Football Boots',
-    price: 1600,
+    price: 869,
     img: 'assets/nivia_blue_football_boots.webp',
     gallery: [
       'assets/products/blue_football_shoes/front.png',
@@ -646,7 +645,7 @@ var ORDER_PRODUCTS = [
   {
     id: 'red-captain-shin-guards',
     name: 'Red Captain Shin Guards',
-    price: 400,
+    price: 115,
     img: 'assets/red_captain_shin_guards.webp',
     gallery: [
       'assets/products/captain_shin_guards/front.png',
@@ -659,7 +658,7 @@ var ORDER_PRODUCTS = [
   {
     id: 'nivia-carbonite-goalkeeper-gloves',
     name: 'Nivia Carbonite Goalkeeper Gloves',
-    price: 1400,
+    price: 569,
     img: 'assets/nivia_carbonite_goalkeeper_gloves.webp',
     gallery: [
       'assets/products/nivia_goalkeeper_gloves/front.png',
@@ -674,7 +673,7 @@ var ORDER_PRODUCTS = [
   {
     id: 'nivia-europa-basketball',
     name: 'Nivia Europa Basketball',
-    price: 1300,
+    price: 520,
     img: 'assets/nivia_europa_basketball.webp',
     gallery: [
       'assets/products/nivia_europa_basketball/front.png',
@@ -687,7 +686,7 @@ var ORDER_PRODUCTS = [
   {
     id: 'nivia-volleyball',
     name: 'Nivia White & Green Volleyball',
-    price: 800,
+    price: 999,
     img: 'assets/nivia_white_green_ball.webp',
     gallery: [
       'assets/products/nivia_volleyball/front.png',
@@ -715,7 +714,7 @@ var ORDER_PRODUCTS = [
   {
     id: 'wilson-tennis-balls',
     name: 'Wilson Tour Premier Tennis Balls',
-    price: 450,
+    price: 500,
     img: 'assets/wilson_tour_premier_tennis_balls.webp',
     gallery: [
       'assets/products/wilson_tennis_balls/front.png',
@@ -730,7 +729,8 @@ var ORDER_PRODUCTS = [
   {
     id: 'golden-football-boot-trophy',
     name: 'Golden Football Boot Trophy',
-    price: 2500,
+    price: 550,
+    pricePrefix: 'From',
     img: 'assets/golden_football_boot_trophy.webp',
     gallery: [
       'assets/products/gold_football_trophy/front.png',
@@ -743,7 +743,8 @@ var ORDER_PRODUCTS = [
   {
     id: 'trophy-collection-display',
     name: 'Trophy Collection Display',
-    price: 5000,
+    price: 99,
+    pricePrefix: 'From',
     img: 'assets/trophy_collection_display.webp',
     gallery: [
       'assets/products/trophy_collection/front.png',
@@ -788,7 +789,7 @@ function renderOrderProducts() {
         '</div>' +
         '<div class="order-info">' +
           '<h4>' + escapeHtml(p.name) + '</h4>' +
-          '<p class="order-price">₹' + p.price.toLocaleString('en-IN') + '</p>' +
+          '<p class="order-price">' + (p.pricePrefix ? p.pricePrefix + ' ' : '') + '₹' + p.price.toLocaleString('en-IN') + '</p>' +
           '<p class="order-desc-text">' + escapeHtml(p.desc) + '</p>' +
           '<div class="order-actions">' +
             '<button class="btn-add-cart" data-id="' + p.id + '">Add to Cart</button>' +
@@ -822,7 +823,7 @@ function openGallery(productId) {
   var modalEl = document.getElementById('galleryModal');
 
   if (titleEl) titleEl.textContent = p.name;
-  if (priceEl) priceEl.textContent = '₹' + p.price.toLocaleString('en-IN');
+  if (priceEl) priceEl.textContent = (p.pricePrefix ? p.pricePrefix + ' ' : '') + '₹' + p.price.toLocaleString('en-IN');
 
   if (thumbsEl) {
     thumbsEl.innerHTML = p.gallery.map(function (src, i) {
@@ -1308,6 +1309,36 @@ document.addEventListener('DOMContentLoaded', function () {
       stepGallery(1);
     }
   });
+
+  /* Mobile navigation toggle */
+  var navEl = document.querySelector('header nav');
+  var navToggle = document.getElementById('navToggle');
+  if (navEl && navToggle) {
+    var closeNav = function () {
+      navEl.classList.remove('menu-open');
+      navToggle.setAttribute('aria-expanded', 'false');
+      navToggle.setAttribute('aria-label', 'Open menu');
+    };
+
+    navToggle.addEventListener('click', function (e) {
+      e.stopPropagation();
+      var isOpen = navEl.classList.toggle('menu-open');
+      navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      navToggle.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+    });
+
+    navEl.querySelectorAll('.nav-links a').forEach(function (link) {
+      link.addEventListener('click', closeNav);
+    });
+
+    document.addEventListener('click', function (e) {
+      if (!navEl.contains(e.target)) closeNav();
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') closeNav();
+    });
+  }
 
   /* Admin access check */
   checkAdminAccess();
