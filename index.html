@@ -1,18 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-IN">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JK Sports Namakkal | Pro Store</title>
+
+  <!-- ════ Security ════
+       GitHub Pages cannot send HTTP security headers, so the important
+       ones that work via <meta> are declared here. The CSP pins all
+       resources to this site (plus Google Fonts), which blocks injected
+       third-party scripts/iframes even if markup is ever tampered with. -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https://images.unsplash.com https://images.jdmagicbox.com; connect-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta name="theme-color" content="#050b16" />
+
+  <title>JK Sports Namakkal | Cricket, Badminton &amp; Football Gear</title>
 
   <!-- ════ SEO ════ -->
-  <meta name="description" content="JK Sports Namakkal — cricket, badminton, football, gym equipment and custom sublimation team jerseys across two branches in Namakkal. Trusted by players, coaches and schools since 2021." />
+  <meta name="description" content="Trusted sports shop in Namakkal for cricket bats, badminton rackets, football boots, gym gear and custom sublimation jerseys. Two branches. Call +91 97867 22444." />
+  <meta name="geo.region" content="IN-TN" />
+  <meta name="geo.placename" content="Namakkal" />
   <link rel="canonical" href="https://jksportsnkl.in/" />
 
   <!-- ════ Open Graph / social sharing ════ -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="JK Sports Namakkal | Pro Store" />
-  <meta property="og:description" content="Cricket, badminton, football, gym gear and custom sublimation jerseys — two branches in Namakkal. Shop sports gear like a pro." />
+  <meta property="og:title" content="JK Sports Namakkal | Cricket, Badminton &amp; Football Gear" />
+  <meta property="og:description" content="Cricket bats, badminton rackets, football boots, gym gear and custom sublimation jerseys — two branches in Namakkal. Call +91 97867 22444." />
   <meta property="og:url" content="https://jksportsnkl.in/" />
   <meta property="og:image" content="https://jksportsnkl.in/assets/og-image.jpg" />
   <meta property="og:image:width" content="1200" />
@@ -23,8 +35,8 @@
 
   <!-- ════ Twitter card ════ -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="JK Sports Namakkal | Pro Store" />
-  <meta name="twitter:description" content="Cricket, badminton, football, gym gear and custom sublimation jerseys — two branches in Namakkal." />
+  <meta name="twitter:title" content="JK Sports Namakkal | Cricket, Badminton &amp; Football Gear" />
+  <meta name="twitter:description" content="Cricket bats, badminton rackets, football boots, gym gear and custom sublimation jerseys — two branches in Namakkal." />
   <meta name="twitter:image" content="https://jksportsnkl.in/assets/og-image.jpg" />
   <meta name="twitter:image:alt" content="JK Sports Namakkal — cricket, badminton, football and gym store" />
 
@@ -49,44 +61,84 @@
        the actual hero image used below. -->
   <link rel="preload" as="image" href="assets/file_00000000f4388208adb434363ee0f666.png" />
 
-  <!-- ════ Structured data: local business ════ -->
+  <!-- ════ Structured data: local business ════
+       One node per physical branch (better local-pack coverage than an
+       address array), plus a WebSite node linking the whole site back
+       to the main branch. -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "SportingGoodsStore",
-    "name": "JK Sports Namakkal",
-    "image": "https://jksportsnkl.in/assets/og-image.jpg",
-    "telephone": "+919786722444",
-    "priceRange": "₹₹",
-    "url": "https://jksportsnkl.in/",
-    "areaServed": "Namakkal, Tamil Nadu",
-    "address": [
+    "@graph": [
       {
-        "@type": "PostalAddress",
-        "name": "Main Branch",
-        "streetAddress": "Periyanna Gounder Plaza",
-        "addressLocality": "Namakkal",
-        "addressRegion": "Tamil Nadu",
-        "addressCountry": "IN"
+        "@type": "SportingGoodsStore",
+        "@id": "https://jksportsnkl.in/#main-branch",
+        "name": "JK Sports Namakkal — Main Branch",
+        "alternateName": "JK Sports",
+        "image": [
+          "https://jksportsnkl.in/assets/og-image.jpg",
+          "https://jksportsnkl.in/assets/logo.jpg"
+        ],
+        "logo": "https://jksportsnkl.in/assets/logo.jpg",
+        "url": "https://jksportsnkl.in/",
+        "telephone": "+919786722444",
+        "priceRange": "₹₹",
+        "currenciesAccepted": "INR",
+        "paymentAccepted": "Cash, UPI, Credit Card, Debit Card",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Periyanna Gounder Plaza",
+          "addressLocality": "Namakkal",
+          "addressRegion": "Tamil Nadu",
+          "addressCountry": "IN"
+        },
+        "areaServed": {
+          "@type": "City",
+          "name": "Namakkal"
+        },
+        "hasMap": "https://maps.app.goo.gl/BgjcV4QqzMea6hDQ7",
+        "sameAs": [
+          "https://www.instagram.com/jk_sports_nkl",
+          "https://youtube.com/@jksportsnamakkal"
+        ]
       },
       {
-        "@type": "PostalAddress",
-        "name": "Second Branch",
-        "streetAddress": "Salem Rd, R.P Pudur",
-        "addressLocality": "Namakkal",
-        "addressRegion": "Tamil Nadu",
-        "addressCountry": "IN"
+        "@type": "SportingGoodsStore",
+        "@id": "https://jksportsnkl.in/#salem-road-branch",
+        "name": "JK Sports Namakkal — Salem Road Branch",
+        "image": "https://jksportsnkl.in/assets/og-image.jpg",
+        "logo": "https://jksportsnkl.in/assets/logo.jpg",
+        "url": "https://jksportsnkl.in/",
+        "telephone": "+919786722444",
+        "priceRange": "₹₹",
+        "currenciesAccepted": "INR",
+        "paymentAccepted": "Cash, UPI, Credit Card, Debit Card",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Salem Rd, R.P Pudur",
+          "addressLocality": "Namakkal",
+          "addressRegion": "Tamil Nadu",
+          "addressCountry": "IN"
+        },
+        "areaServed": {
+          "@type": "City",
+          "name": "Namakkal"
+        },
+        "hasMap": "https://maps.app.goo.gl/mj17aynw26EvpiDZ9",
+        "sameAs": [
+          "https://www.instagram.com/jk_sports_nkl",
+          "https://youtube.com/@jksportsnamakkal"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://jksportsnkl.in/#website",
+        "url": "https://jksportsnkl.in/",
+        "name": "JK Sports Namakkal",
+        "description": "Sports shop in Namakkal for cricket, badminton, football, gym gear and custom sublimation jerseys.",
+        "inLanguage": "en-IN",
+        "publisher": { "@id": "https://jksportsnkl.in/#main-branch" }
       }
-    ],
-    "sameAs": [
-      "https://www.instagram.com/jk_sports_nkl",
-      "https://youtube.com/@jksportsnamakkal"
-    ],
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5.0",
-      "reviewCount": "1000"
-    }
+    ]
   }
   </script>
 </head>
@@ -565,12 +617,12 @@
         <div class="pulse-card">
           <h3 class="pulse-title">Main Branch 🏪</h3>
           <p style="color:var(--text-dim);margin-bottom:1rem;">Periyanna Gounder Plaza, Namakkal</p>
-          <a href="https://maps.app.goo.gl/BgjcV4QqzMea6hDQ7" target="_blank" class="btn-jersey" style="background:var(--primary);color:white;display:inline-block;">Get Directions →</a>
+          <a href="https://maps.app.goo.gl/BgjcV4QqzMea6hDQ7" target="_blank" rel="noopener noreferrer" class="btn-jersey" style="background:var(--primary);color:white;display:inline-block;">Get Directions →</a>
         </div>
         <div class="pulse-card">
           <h3 class="pulse-title">Second Branch 🏪</h3>
           <p style="color:var(--text-dim);margin-bottom:1rem;">Salem Rd, R.P Pudur, Namakkal</p>
-          <a href="https://maps.app.goo.gl/mj17aynw26EvpiDZ9" target="_blank" class="btn-jersey" style="background:var(--primary);color:white;display:inline-block;">Get Directions →</a>
+          <a href="https://maps.app.goo.gl/mj17aynw26EvpiDZ9" target="_blank" rel="noopener noreferrer" class="btn-jersey" style="background:var(--primary);color:white;display:inline-block;">Get Directions →</a>
         </div>
       </div>
       <div style="text-align:center;margin-top:2rem;padding-top:1.5rem;border-top:1px solid var(--light-border);">
@@ -621,13 +673,13 @@
         <div class="branch-item">
           <div class="branch-header"><strong>Main Branch</strong></div>
           <p>Periyanna Gounder Plaza, Namakkal
-            <a href="https://maps.app.goo.gl/r7bZLchu7NaHT3Rf9" target="_blank" class="route-link">Get Route</a>
+            <a href="https://maps.app.goo.gl/r7bZLchu7NaHT3Rf9" target="_blank" rel="noopener noreferrer" class="route-link">Get Route</a>
           </p>
         </div>
         <div class="branch-item">
           <div class="branch-header"><strong>Second Branch</strong></div>
           <p>Salem Rd, R.P Pudur, Namakkal
-            <a href="https://maps.google.com/?q=JK+Sports+Namakkal+Salem+Road" target="_blank" class="route-link">Get Route</a>
+            <a href="https://maps.google.com/?q=JK+Sports+Namakkal+Salem+Road" target="_blank" rel="noopener noreferrer" class="route-link">Get Route</a>
           </p>
         </div>
       </div>
@@ -782,7 +834,7 @@
   </div>
 </section>
 
-<script src="script.js?v=20261112" defer></script>
+<script src="script.js?v=20261113" defer></script>
 
 </body>
 </html>

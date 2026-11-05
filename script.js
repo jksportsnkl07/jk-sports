@@ -430,7 +430,7 @@ if (catalogImageIssues.length && typeof console !== 'undefined' && console.warn)
   console.warn('JK Sports catalog image issues detected', catalogImageIssues);
 }
 
-var CATALOG_SOURCE_URL = 'catalog.json?v=20261112';
+var CATALOG_SOURCE_URL = 'catalog.json?v=20261113';
 
 function refreshCatalogIssues() {
   catalogImageIssues = scanCatalogImageIssues(CATALOG);
@@ -1021,7 +1021,9 @@ function buildWhatsAppMessage(cartItems, customerInfo) {
 
 function openWhatsApp(message) {
   var url = 'https://wa.me/' + STORE_WHATSAPP + '?text=' + encodeURIComponent(message);
-  window.open(url, '_blank');
+  // noopener/noreferrer stops the opened WhatsApp tab from reaching back
+  // into this page via window.opener (reverse tabnabbing).
+  window.open(url, '_blank', 'noopener,noreferrer');
 }
 
 /* ── BUY NOW (single product to WhatsApp) ── */

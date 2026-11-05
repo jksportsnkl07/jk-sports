@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Regenerated automatically by hand — update if new pages are added.
+Sitemap: https://jksportsnkl.in/sitemap.xml
